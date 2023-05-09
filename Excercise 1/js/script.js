@@ -6,8 +6,18 @@ let object = {
     fruit3: 'mango'
 };
 
-//array
+//array using forEach
 array.forEach((val)=> console.log("Array :",val));   
+
+//array using for...in loop
+for(i in array){
+    console.log("for...in array :",array[i]);
+}
+
+//array using for...of loop
+for(i of array){
+    console.log("for...of array :",i);
+}
 
 //array of objects
 array2.forEach( objarray=> {
