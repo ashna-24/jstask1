@@ -1,5 +1,5 @@
 let array= ["apple", "banana", "mango"];
-let array2 = [{fruit:'apple'},{fruit:'banana'},{fruit:'mango'}];
+let arrayObj = [{fruit:'apple'},{fruit:'banana'},{fruit:'mango'}];
 let object = {
     fruit1: 'apple',
     fruit2: 'banana',
@@ -20,7 +20,7 @@ for(i of array){
 }
 
 //array of objects
-array2.forEach( objarray=> {
+arrayObj.forEach( objarray=> {
     for(const value in objarray){
         console.log("Array object :",`${objarray[value]}`);
     }
