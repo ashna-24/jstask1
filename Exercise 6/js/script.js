@@ -9,20 +9,41 @@ function dateval(){
     if(daymm < 10){
         daymm = '0'+ daymm;
     }
-    var today = daydd + "/" + daymm + "/" + dayyyyy;
-    console.log(today);
+
     var randdate = new Date(document.getElementById('date').value);
-    console.log(randdate);
     var dateday = randdate.getDate();
     var datemonth = randdate.getMonth()+1;
     var dateyear = randdate.getFullYear();
-    var wholedate = dateday + "/" + datemonth + "/" + dateyear;
-    console.log(wholedate)
-    if(today < wholedate){
-        alert('Day After today');
+    if(dateday < 10){
+        dateday = '0' + dateday;
     }
-    else{
-        alert('Day before today');
+    if(datemonth < 10){
+        datemonth = '0'+ datemonth;
     }
 
+    if(dayyyyy == dateyear){
+        if(daymm == datemonth){
+            if(daydd == dateday){
+                alert('Today');
+            }
+            else if(daydd > dateday){
+                alert('Day before today');
+            }
+            else{
+                alert('Day after today');
+            }
+        }
+        else if(daymm > datemonth){
+            alert('Day before today');
+        }
+        else{
+            alert('Day after today');
+        }
+    }
+    else if(dayyyyy > dateyear){
+        alert('Day before today');
+    }
+    else{
+        alert('Day after today');
+    }
 }
