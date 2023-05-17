@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex{
+    display: flex;
+}
+
+.width{
+    width: 100%;
+    margin: 2px;
+}
+
+.setone{
+    padding: 15px;
+    width: 50%;
+    background-color: lightpink;
+    text-align: center;
+    margin: 3px;
+    font-size: 20px;
+    color: black;
+}
+
+.one,.two{
+    width: 100%;
+}
+
+.color{
+    background-color: lavender;
+}
+
+@media screen and (max-width:768px) {
+    .flex{
+        display: block;
+    }
+
+    .setone{
+        width: 100%;
+    }
+
+    .one,.two{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1024px) and (min-width:789px) {
+    .flex{
+        display: block;
+    }
+
+    .setone{
+        width: 100%;
+    }
+
+    .one, .two{
+        display: flex;
+    }
+}
