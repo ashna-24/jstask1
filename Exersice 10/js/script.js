@@ -5,6 +5,7 @@ const a={ Parent:
             } 
         };
 const b = JSON.parse(JSON.stringify(a)); 
+console.log(b);
 b.Parent.Student.Name = "Ashna";
 b.Parent.Student.Age = 23;
 b.Parent.Student.Rollno = 18;

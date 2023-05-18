@@ -28,6 +28,6 @@ for(let i in data){
         console.log("Age:",result["age"]);
     }
 
-    result["id"] = result["id"].slice(3).padStart(result["id"].length,'*').trim();
+    result["id"] = result["id"].slice(3).padStart(result["id"].length,'#').trim();
     console.log("Id:",result["id"]);
 }
