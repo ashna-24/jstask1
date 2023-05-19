@@ -12,25 +12,25 @@
             for(let i in GLSegments){
                 let constseg = GLSegments[i];
                 if(constseg == ''){
-                    console.log("Failed");
+                    console.log("Validation Failed");
                 }
                 else{
-                    console.log("Had value");
+                    console.log("Validation Passed");
                 }
             }
             for(let i in GLSegmentsFail){
                 let constsegfail = GLSegmentsFail[i];
                 if(constsegfail == ''){
-                    console.log("Failed");
+                    console.log("Validation Failed");
                 }
                 else{
-                    console.log("Had value");
+                    console.log("Validation Passed");
                 }
             }
         }
     }
 
-    /*if(configparse.config.type=='REQUIRED'){
+    /* if(configparse.config.type=='REQUIRED'){
         console.log('hi')
     } */
     /* for(let i in GLSegments){
